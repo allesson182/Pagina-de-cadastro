@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .logo {
+      position: absolute;
+      top: -3px;
+      right: 200px;
+    }
+
+    .h1 {
+      color: rgb(164, 198, 231);
+      font-family: monospace;
+      text-align: center;
+      font: italic
+    }
+
+    .enunciado {
+      border: rgba(91, 91, 221, 1) 5px solid;
+      text-align: center;
+    }
+
+    .cabecario {
+      margin: 0 auto;
+      width: 980px;
+      font-family: 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .cadastro {
+      background: linear-gradient(315deg, rgb(36, 98, 190) 0%, rgb(35, 35, 53) 63%);
+    }
+
+    .tabela {
+      border-collapse: collapse;
+      margin: auto;
+      width: 980px;
+      background: linear-gradient(315deg, rgba(218, 182, 203, 1) 0%, rgba(91, 91, 221, 1) 63%);
+      text-align: center;
+    }
+
+    .tabela td {
+      border: 1px solid floralwhite;
+      padding: 8px;
+    }
+
+    .tabela th {
+      border: 1px solid floralwhite;
+      padding: 8px;
+    }
+
+    .legenda {
+      margin: 0 auto;
+      font-style: italic;
+      text-align: center;
+      color: rgb(238, 235, 253);
+    }
+
+    .corpo {
+      margin: 0 auto;
+      width: 980px;
+      font-family: monospace, serif;
+      color: floralwhite;
+      background: linear-gradient(315deg, rgb(39, 58, 97) 0%, rgba(91, 91, 221, 1) 63%);
+      padding: inherit;
+      background-repeat: inherit;
+      background-attachment: fixed;
+    }
+
+    .final,
+    .enunciado2 {
+      text-align: center;
+    }
+
+    .inserir {
+      border-radius: 12px;
+      border-style: solid;
+      background-color: #246292;
+      padding: 7px;
+      border-color: #1480b6;
+      border-width: 2px;
+      color: #ffffff;
+      font-size: 12px;
+      width: 55%;
+      align: center;
+    }
+  </style>
+  <title>Cadastro
+  </title>
+</head>
+
+<body class="corpo">
+  <div class="cadastro">
+    <h1 class="enunciado2">
+      Página de Cadastro: Clube de Livros
+    </h1>
+    <form>
+      <fieldset>
+        <legend class="legenda">Informações de Login</legend>
+        <p>
+          <label for="mail">Digite seu email:</label>
+          <input type="email" id="mail" placeholder="exemplo@book.com" class="inserir" />
+        </p>
+        <p><label for="campo_senha">Crie uma senha: </label>
+          <input type="password" id="campo_senha" placeholder="****" class="inserir" />
+        </p>
+        <p><label for="campo_senha2">Confirme a senha: </label>
+          <input type="password" id="campo_senha2" placeholder="****" class="inserir" />
+        </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend class="legenda">Informações Pessoais</legend>
+        <p>
+          <label for="nick">Nome ou apelido: </label>
+          <input type="text" id="nick" placeholder="Nome de Perfil" class="inserir">
+        </p>
+        <p><label for="img">Imagem de Perfil: </label>
+          <input type="file" id="img" accept="image/*">
+        </p>
+        <p><label for="data">Data de nascimento:</label>
+          <input type="date" id="data" class="inserir">
+        </p>
+        <p>
+          <label> Gostaria de ser tratado(a) no: </label>
+          <input type="radio" id="mas" name="gender"> <label for="mas">Masculino</label>
+          <input type="radio" id="fem" name="gender"> <label for="fem">Feminino</label>
+          <input type="radio" id="neu" name="gender"> <label for="neu">Neutro</label>
+        </p>
+        <p>
+          <label for="bio">Biografia: </label>
+          <textarea id="bio" rows="2" cols="60" placeholder="escreva sobre você."></textarea></p>
+        </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend class="legenda">Preferencias</legend>
+        <p>
+          <label for="area_selecao">Gênero favorito:</label>
+          <select id="area_selecao">
+            <option value="1"> Romance </option>
+            <option value="2"> conto </option>
+            <option value="3"> crônicas </option>
+            <option value="4"> novelas </option>
+            <option value="5"> Biografias </option>
+            <option value="5"> Didáticos </option>
+          </select>
+        </p>
+        <label>Subgêneros que me interessam:</label>
+        <p>
+          <input type="checkbox" id="cb1">
+          <label for="cb1"> Aventura</label>
+
+          <input type="checkbox" id="cb2">
+          <label for="cb2"> Fantasia</label>
+
+          <input type="checkbox" id="cb3">
+          <label for="cb3"> Ficção Científica</label>
+
+          <input type="checkbox" id="cb4">
+          <label for="cb4"> Horror</label>
+
+          <input type="checkbox" id="cb5">
+          <label for="cb5">Comédia </label>
+        </p>
+        <p>
+          <label for="rec">Número de recomendações na página inicial:</label>
+          <input type="number" min="3" max="10" value="3" id="rec">
+        </p>
+        <p>
+          <label for="cor">Cor do seu perfil: </label>
+          <input type="color" id="cor">
+        </p>
+
+        <p class="final">
+          <input type="reset" value="Redefinir">
+          <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+  </div>
+  </fieldset>
+
+</body>
+
+</html>
